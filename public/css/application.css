@@ -1,0 +1,26 @@
+body {
+  padding: 20px;
+}
+
+.paytone {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  /*margin-bottom: 30px;*/
+  align-content:space-between;
+  /*margin: 10px 30px 20px 30px;*/
+}
+
+.space {
+  margin: 30px;
+}
+
+.resize {
+  width:240px; /* you can use % */
+  height: auto;
+}

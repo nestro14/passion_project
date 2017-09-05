@@ -1,0 +1,46 @@
+<h1 class="text-center paytone">Top 10 Players Rank by a Nerd-stor</h1>
+
+<div class="card text-center">
+  <div class="card-header flex">
+  <a class="nav-link" href="/">Home</a>
+  <a class="nav-link" href="/teams">Teams</a>
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="/players/QB">QB</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/players/RB">RB</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/players/WR">WR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/players/TE">TE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/players/K">K</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/players/DEF">DEF</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="flex">
+<% @top_ten_players.each do |player| %>
+
+  <div class="card space" style="width: 15rem;">
+    <img class="card-img-top resize" src="/images/helmets/<%= player.team %>.gif" alt="Player Photo Here">
+    <div class="card-body">
+      <h4 class="card-title"><%= player.display_name %></h4>
+      <p class="card-text">Position: <%= player.position %></p>
+      <p class="card-text">Nerd-stor Rank: <%= player.nerd_rank %></p>
+      <p class="card-text">Position Rank: <%= player.position_rank %></p>
+      <p class="card-text">Overall Rank: <%= player.overall_rank %></p>
+      <a href="players/<%= player.player_id %>" class="btn btn-primary">View player info</a>
+    </div>
+  </div>
+
+<% end %>
+</div>
