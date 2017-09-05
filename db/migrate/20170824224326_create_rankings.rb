@@ -11,9 +11,9 @@ class CreateRankings < ActiveRecord::Migration[5.1]
       t.string :team          # "DET"
       t.integer :byeWeek      # "9"
       t.integer :bye_week
-      t.integer :standDev
+      t.float :standDev
       t.float :nerdRank     # "7.209"
-      t.integer :stand_dev
+      t.float :stand_dev
       t.float :nerd_rank
       t.integer :positionRank # "1"
       t.integer :position_rank
