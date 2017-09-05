@@ -1,3 +1,8 @@
+Team.destroy_all
+Player.destroy_all
+Ranking.destroy_all
+WeeklyRanking.destroy_all
+
 teams = FFNerd.teams.map do |team|
   team.to_h
 end
@@ -29,6 +34,7 @@ weeks = 17
 weeks.times do |week|
   positions.each do |position|
     FFNerd.weekly_rankings(position, (week+1)).each do |weekly_rank|
+      next if weekly_rank == nil
       WeeklyRanking.create!(weekly_rank.to_h)
     end
   end
