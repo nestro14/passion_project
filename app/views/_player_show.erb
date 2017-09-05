@@ -1,0 +1,19 @@
+<div class="flex">
+  <div class="card space" style="width: 15rem;">
+    <img class="card-img-top resize" src="/images/helmets/<%= @player_rank.team %>.gif" alt="Player Photo Here">
+    <div class="card-body">
+      <h4 class="card-title"><%= @player_rank.display_name %></h4>
+      <p class="card-text">Position: <%= @player_rank.position %></p>
+      <p class="card-text">Nerd-stor Rank: <%= @player_rank.nerd_rank %></p>
+      <p class="card-text">Position Rank: <%= @player_rank.position_rank %></p>
+      <p class="card-text">Overall Rank: <%= @player_rank.overall_rank %></p>
+      <p class="card-text">Team: <%= @player_rank.team %></p>
+      <p class="card-text">Jersey #: <%= @player.jersey %></p>
+      <p class="card-text">Height: <%= @player.height %></p>
+      <p class="card-text">Weight: <%= @player.weight %></p>
+      <p class="card-text">DOB: <%= @player.dob %></p>
+      <p class="card-text">College: <%= @player.college %></p>
+      <a href="/players" class="btn btn-primary">Back to players</a>
+    </div>
+  </div>
+</div>

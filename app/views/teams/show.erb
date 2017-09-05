@@ -1,0 +1,11 @@
+<%= erb :'_nav', layout: false %>
+
+<div class="row">
+  <div class="col">
+    <div class="jumbotron">
+      <h1 class="display-3 text-center"><%= @team.full_name %></h1>
+    </div>
+  </div>
+</div>
+
+<%= erb :'_top_ten_players', layout: false %>
